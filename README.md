@@ -39,18 +39,14 @@ The website allows users to verify participant certificate details using the ava
 
 ---
 
-## 📂 Project Structure
+## 🌐 Live Website
 
-```text
-📁 SIH
-│
-├── 📁 images
-│   ├── 🖼️ azadi-logo.png
-│   ├── 🖼️ background-decoration.png
-│   ├── 🖼️ ministry-logo.png
-│   └── 🖼️ sih-2026-logo.png
-│
-├── 📄 index.html
-├── 📜 script.js
-├── 🎨 style.css
-└── 📖 README.md
+🚀 **Live Demo:**  
+👉 https://internal-smartindiahackton-2026.netlify.app/
+
+---
+
+## 💻 Source Code
+
+📦 **GitHub Repository:**  
+👉 https://github.com/Niranjan184/SIH-internal-certificate-verification
