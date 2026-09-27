@@ -1,0 +1,633 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    background: #eef8ff;
+    color: #17385f;
+}
+
+.website {
+    width: 100%;
+    max-width: 850px;
+    margin: auto;
+    padding: 25px 18px;
+    background:
+        linear-gradient(145deg, #edf8ff, #ffffff 50%, #e8f5ff);
+    min-height: 100vh;
+}
+
+/* HEADER */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #d6e3ed;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.ministry-logo {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
+
+.header-text h3 {
+    font-size: 18px;
+    color: #174d88;
+    letter-spacing: 0.5px;
+}
+
+.header-text h2 {
+    color: #21a35b;
+    font-size: 28px;
+    margin-top: 3px;
+}
+
+.header-text p {
+    font-size: 11px;
+    color: #66839e;
+    margin-top: 5px;
+}
+
+.azadi-logo {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+/* SIH HEADING */
+
+.sih-heading {
+    text-align: center;
+    padding: 35px 0;
+}
+
+.heading-small {
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: #66839e;
+}
+
+.sih-heading h1 {
+    font-size: 80px;
+    letter-spacing: -4px;
+    margin: 10px 0;
+    color: #164c88;
+    font-weight: 900;
+}
+
+.green {
+    color: #22a55b !important;
+}
+
+.orange {
+    color: #ec8620 !important;
+}
+
+.heading-bottom {
+    font-size: 12px;
+    letter-spacing: 4px;
+    color: #6b8194;
+}
+
+/* CARD */
+
+.card {
+    background: rgba(255, 255, 255, 0.97);
+    border: 1px solid #d8e5ef;
+    border-radius: 20px;
+    padding: 35px;
+    box-shadow: 0 10px 28px rgba(45, 100, 145, 0.08);
+}
+
+.certificate-icon {
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 12px;
+}
+
+.card h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #164477;
+    margin-bottom: 12px;
+}
+
+.description {
+    text-align: center;
+    color: #66798b;
+    font-size: 13px;
+    line-height: 1.7;
+    margin-bottom: 28px;
+}
+
+/* FORM */
+
+label {
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    color: #24496e;
+    margin-bottom: 9px;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #d6e1ea;
+    border-radius: 9px;
+    background: #f9fbfd;
+    color: #17385f;
+    font-size: 14px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #3479b9;
+    box-shadow: 0 0 0 3px #e0effc;
+}
+
+.input-note {
+    font-size: 11px;
+    color: #8a9aaa;
+    margin: 8px 0 20px;
+}
+
+.verify-button,
+.back-button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background: #16518e;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.verify-button:hover {
+    background: #0f4175;
+}
+
+.error-message {
+    color: #b42318;
+    background: #fff0ee;
+    border: 1px solid #f2c5bf;
+    border-radius: 8px;
+    font-size: 12px;
+    padding: 10px;
+    margin-top: 12px;
+    display: none;
+}
+
+/* RESULT PAGE */
+
+.hidden {
+    display: none !important;
+}
+
+.success-message {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 13px;
+    border-radius: 10px;
+    background: #e5f7e9;
+    border: 1px solid #b7e4c2;
+    color: #18713c;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.success-icon {
+    background: #23a255;
+    color: white;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.result-title {
+    font-size: 22px !important;
+    margin-bottom: 8px !important;
+}
+
+.college-name {
+    text-align: center;
+    color: #71879b;
+    font-size: 12px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+/* DETAILS */
+
+.details-box {
+    border: 1px solid #dbe6ef;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 22px;
+}
+
+.detail-row {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 15px;
+    padding: 14px 16px;
+    border-bottom: 1px solid #e4edf3;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.detail-row:last-child {
+    border-bottom: none;
+}
+
+.detail-row span {
+    color: #71869a;
+    font-weight: bold;
+}
+
+.detail-row strong {
+    text-align: right;
+    overflow-wrap: anywhere;
+    color: #23496e;
+}
+
+/* TEAM MEMBERS */
+
+.team-box {
+    border: 1px solid #dbe6ef;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.team-box h3 {
+    padding: 15px;
+    background: #edf5fb;
+    color: #24496e;
+    font-size: 14px;
+}
+
+.member {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 15px;
+    border-top: 1px solid #e4edf3;
+    font-size: 13px;
+    font-weight: bold;
+    color: #23496e;
+}
+
+.member-number {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e0edf8;
+    color: #245583;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.verification-status {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #168044;
+    background: #e5f7e9;
+    border: 1px solid #b7e4c2;
+    border-radius: 10px;
+    padding: 14px;
+    font-size: 13px;
+}
+
+.verification-status span {
+    background: #198b4a;
+    color: white;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-button {
+    background: transparent;
+    border: 1px solid #c8d9e7;
+    color: #28577f;
+    margin-top: 15px;
+}
+
+.back-button:hover {
+    background: #edf5fb;
+}
+
+.bottom-note {
+    text-align: center;
+    font-size: 11px;
+    color: #718497;
+    margin-top: 15px;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    color: #718ca5;
+    font-size: 10px;
+    letter-spacing: 2px;
+    margin-top: 28px;
+}
+
+footer span {
+    margin: 0 5px;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .website {
+        padding: 15px 10px;
+    }
+
+    .header-text h3 {
+        font-size: 13px;
+    }
+
+    .header-text h2 {
+        font-size: 23px;
+    }
+
+    .header-text p {
+        font-size: 9px;
+    }
+
+    .ministry-logo {
+        width: 52px;
+        height: 52px;
+    }
+
+    .azadi-logo {
+        width: 58px;
+        height: 58px;
+    }
+
+    .sih-heading {
+        padding: 28px 0;
+    }
+
+    .sih-heading h1 {
+        font-size: 60px;
+    }
+
+    .heading-small {
+        font-size: 9px;
+        letter-spacing: 1.5px;
+    }
+
+    .heading-bottom {
+        font-size: 9px;
+        letter-spacing: 2px;
+    }
+
+    .card {
+        padding: 22px 16px;
+    }
+
+    .card h2 {
+        font-size: 23px;
+    }
+
+    .detail-row {
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+
+    .detail-row strong {
+        text-align: left;
+    }
+
+    footer {
+        line-height: 1.8;
+    }
+}
+
+/* HEADER WITH 3 LOGOS */
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0 15px 25px;
+    border-bottom: 1px solid #d6e3ed;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.ministry-logo {
+    width: 95px;
+    height: 70px;
+    object-fit: contain;
+}
+
+.sih-logo-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 2;
+}
+
+.sih-logo {
+    width: 290px;
+    max-width: 100%;
+    height: 85px;
+    object-fit: contain;
+}
+
+.azadi-logo {
+    width: 95px;
+    height: 70px;
+    object-fit: contain;
+}
+
+/* MOBILE HEADER */
+
+@media (max-width: 600px) {
+
+    .header {
+        gap: 8px;
+        padding: 0 0 18px;
+    }
+
+    .ministry-logo,
+    .azadi-logo {
+        width: 65px;
+        height: 55px;
+    }
+
+    .sih-logo {
+        width: 190px;
+        height: 65px;
+    }
+}
+/* SIH LOGO + TEXT */
+
+.sih-logo-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+    flex: 2;
+
+    /* Logo left side move */
+    transform: translateX(-35px);
+}
+
+/* SIH logo size */
+
+.sih-logo {
+    width: 105px;
+    height: 85px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+
+/* CERTIFICATE VERIFICATION HEADING */
+
+#loginPage h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #164477;
+
+    /* Heading mela move */
+    transform: translateY(-15px);
+
+    margin-bottom: 5px;
+}
+
+/* Description heading-ku close-a varum */
+
+#loginPage .description {
+    text-align: center;
+    color: #66798b;
+    font-size: 13px;
+    line-height: 1.7;
+
+    margin-top: -5px;
+    margin-bottom: 28px;
+}
+/* MOBILE SIH LOGO + TEXT */
+
+@media (max-width: 600px) {
+
+    .sih-logo-section {
+        gap: 5px;
+        transform: translateX(-10px);
+    }
+
+    .sih-logo {
+        width: 65px;
+        height: 60px;
+    }
+
+    .sih-logo-section::after {
+        width: 105px;
+        font-size: 10px;
+        line-height: 1.3;
+    }
+
+    #loginPage h2 {
+        font-size: 23px;
+        transform: translateY(-10px);
+    }
+}
+/* SIH LOGO + TEXT */
+
+.sih-logo-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+    flex: 2;
+
+    transform: translateX(-35px);
+}
+
+.sih-logo {
+    width: 105px;
+    height: 85px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+/* HEADER TEXT */
+
+.sih-header-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.25;
+    font-size: 18px;
+    font-weight: 700;
+    color: #174d88;
+    white-space: nowrap;
+}
+
+/* 2026 ONLY GREEN */
+
+.sih-header-text strong {
+    color: #21a35b;
+    font-size: 28px;
+    margin-top: 3px;
+}
+@media (max-width: 600px) {
+
+    .sih-logo-section {
+        gap: 5px;
+        transform: translateX(-10px);
+    }
+
+    .sih-logo {
+        width: 65px;
+        height: 60px;
+    }
+
+    .sih-header-text {
+        font-size: 10px;
+    }
+
+    .sih-header-text strong {
+        font-size: 17px;
+    }
+}

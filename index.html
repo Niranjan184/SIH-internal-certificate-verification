@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SIH 2026 | Certificate Verification</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="website">
+
+
+<header class="header">
+
+    <!-- Ministry of Education Logo -->
+    <div class="logo-section">
+        <img
+            src="images/ministry-logo.png"
+            alt="Ministry of Education"
+            class="ministry-logo"
+        >
+    </div>
+
+    <!-- SIH LOGO + TEXT -->
+
+<div class="sih-logo-section">
+
+    <img
+        src="images/sih-2026-logo.png"
+        alt="Smart India Hackathon Logo"
+        class="sih-logo"
+    >
+
+    <div class="sih-header-text">
+        <span>SMART INDIAN HACKTHON</span>
+        <strong>2026</strong>
+    </div>
+
+</div>
+
+    <!-- Azadi Ka Amrit Mahotsav Logo -->
+    <div class="logo-section">
+        <img
+            src="images/azadi-logo.png"
+            alt="Azadi Ka Amrit Mahotsav"
+            class="azadi-logo"
+        >
+    </div>
+
+</header>
+        <!-- SIH TITLE -->
+        <section class="sih-heading">
+
+            <p class="heading-small">
+                INNOVATE FOR A BRIGHTER TOMORROW
+            </p>
+
+            <h1>
+                <span>SIH</span>
+                <span class="green">20</span><span class="orange">26</span>
+            </h1>
+
+            <p class="heading-bottom">
+                IDEAS | INNOVATION | IMPACT
+            </p>
+
+        </section>
+
+        <!-- LOGIN PAGE -->
+        <section id="loginPage" class="card">
+
+            <div class="certificate-icon"></div>
+
+            <h2>Certificate Verification</h2>
+
+            <p class="description">
+                Enter your certificate ID to verify your participation
+                in Internal Smart India Hackathon 2026.
+            </p>
+
+            <form id="verificationForm">
+
+                <label for="certificateId">
+                    Certificate ID
+                </label>
+
+                <input
+                    type="text"
+                    id="certificateId"
+                    placeholder="Enter Certificate ID"
+                    required
+                >
+
+                <p class="input-note">
+                    Enter the certificate ID provided by your institution.
+                </p>
+
+                <button type="submit" class="verify-button">
+                     Verify Certificate
+                </button>
+
+                <p id="errorMessage" class="error-message"></p>
+
+            </form>
+
+        </section>
+
+        <!-- RESULT PAGE -->
+        <section id="resultPage" class="card result-card hidden">
+
+            <div class="success-message">
+                <span class="success-icon">✓</span>
+                <span>Certificate successfully verified</span>
+            </div>
+
+            <h2 class="result-title">
+                Internal Smart India Hackathon 2026
+            </h2>
+
+            <p class="college-name">
+                St. Joseph College of Engineering and Technology,
+                Thanjavur
+            </p>
+
+            <!-- STUDENT DETAILS -->
+            <div class="details-box">
+
+                <div class="detail-row">
+                    <span>Student Name</span>
+                    <strong id="studentName"></strong>
+                </div>
+
+                <div class="detail-row">
+                    <span>Certificate ID</span>
+                    <strong id="displayCertificateId"></strong>
+                </div>
+
+                <div class="detail-row">
+                    <span>Team Name</span>
+                    <strong id="teamName"></strong>
+                </div>
+
+                <div class="detail-row">
+                    <span>Statement ID</span>
+                    <strong id="statementId"></strong>
+                </div>
+
+                <div class="detail-row">
+                    <span>Statement Name</span>
+                    <strong id="statementName"></strong>
+                </div>
+
+                <div class="detail-row">
+                    <span>Institution</span>
+                    <strong>
+                        St. Joseph College of Engineering
+                        and Technology, Thanjavur
+                    </strong>
+                </div>
+
+                <div class="detail-row">
+                    <span>Participation</span>
+                    <strong class="green-text">
+                        Internal SIH 2026
+                    </strong>
+                </div>
+
+            </div>
+
+            <!-- TEAM MEMBERS -->
+            <div class="team-box">
+
+                <h3> Team Members</h3>
+
+                <div id="teamMembers"></div>
+
+            </div>
+
+            <!-- STATUS ONLY — NO VERIFIED BUTTON -->
+            <div class="verification-status">
+                <span>✓</span>
+                <strong>Verification Status: Verified</strong>
+            </div>
+
+            <button id="backButton" class="back-button">
+                ← Back to Verification
+            </button>
+
+            <p class="bottom-note">
+                This certificate has been verified by the institution.
+            </p>
+
+        </section>
+
+        <footer>
+            VIKSIT BHARAT 2047
+            <span>•</span>
+            IDEATE • INNOVATE • IMPLEMENT
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
